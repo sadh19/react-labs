@@ -1,4 +1,4 @@
-import { makeAutoObservable } from "mobx"
+import { makeAutoObservable, autorun } from "mobx";
 
 export class AppStore {
 
@@ -6,6 +6,7 @@ export class AppStore {
 
   constructor() {
     makeAutoObservable(this);
+    autorun(() => console.log(this.countTotal));
   }
 
   increaseCount() {
