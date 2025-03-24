@@ -9,6 +9,7 @@ export const Dashboard = observer(
           <button onClick={() => counter.increaseCount()}>Increase</button>
           <button onClick={() => counter.decreaseCount()}>Decrease</button>
         </div>
-      </>)
+      </>
+    )
   }
 )
